@@ -1,0 +1,17 @@
+---
+- hosts: database
+  become: yes
+  vars_files:
+    - ~/Ansible/vars/main.yml
+    - ~/Ansible/vars/maindemysql.yml
+  pre_tasks:
+    - name: crea users
+      set_fact: 
+              mysql_users: "{{ mysql_users | default([])+ [{'name': item.username, 'password': item.mysql.password, 'host': item.mysql.hosts, 'priv': item.mysql.privs}] }}"
+      with_items: {{ clients }}
+  roles:
+    - { role: geerlingguy.mysql }
+  roles:
+      mysql_backup_dir: /var/backups/database
+      mysql_backup_filename_format: "{{ ansible_hostname }}-%a%m%d.sql.gz"
+      mysql_backup_minimum_expected_size: 100000

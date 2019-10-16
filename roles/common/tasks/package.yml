@@ -1,0 +1,12 @@
+---
+- name: ajout des packages loop
+  apt:
+          name: "{{ item }}"
+  loop: "{{ packages }}"
+
+- name: Desactiver Root via SSH
+  lineinfile: 
+     path: /etc/ssh/sshd_config
+     regexp: 'PermitRootLogin yes'
+     line: PermitRootLogin no
+     state: present

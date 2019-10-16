@@ -1,0 +1,10 @@
+#Cours administration Linux du 07-10-2019
+[all]
+database
+web
+
+[database]
+192.168.23.179
+
+[web]
+192.168.23.180

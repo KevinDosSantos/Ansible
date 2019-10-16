@@ -1,0 +1,13 @@
+#---
+#- name: Configuration des servers
+#  import_tasks: package.yml
+
+#- name: Ajouts des users
+#  import_tasks: users.yml
+
+#- name: creation des .ssh
+#  import_tasks: dir.yml
+
+#- name: Ajout de la clé dans  authorized_keys
+#  import_tasks: files.yml
+

@@ -1,0 +1,11 @@
+---
+#Pour utilisation de variable projet mysql
+clients: 
+  - username: itescia1
+    password: Itescia2020
+    host: "%"
+    priv: "itescia_db.*:ALL"
+  - username: itescia2
+    password: Itescia2020
+    hosts: "%"
+    privs: "itescia_db.*:ALL"

@@ -1,0 +1,10 @@
+---
+#remplacement du user itesciaadmin par KevinDS car pb avec le nom de compte,
+#a corriger plus tard
+- name: Add user itesciadmin
+  user:
+          name: KevinDS
+          shell: /bin/bash
+          home: /home/itesciadmin
+          uid: 1001
+          groups: itescia,sudo
