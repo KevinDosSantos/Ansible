@@ -6,3 +6,5 @@
           owner: itesciadmin
           group: itesciadmin
           mode: '0755'
+#reimportation des clés SSH après modifications des VMs
+#Ok le 16-10-19

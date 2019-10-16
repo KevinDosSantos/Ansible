@@ -11,3 +11,6 @@
 #- name: Ajout de la clé dans  authorized_keys
 #  import_tasks: files.yml
 
+
+
+#OK le 16-10-19

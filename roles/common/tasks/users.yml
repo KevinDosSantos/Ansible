@@ -1,6 +1,5 @@
 ---
-#remplacement du user itesciaadmin par KevinDS car pb avec le nom de compte,
-#a corriger plus tard
+#remplacement de l'utilisateur  itesciaadmin par KevinDS car pb avec le nom de compte,
 - name: Add user itesciadmin
   user:
           name: KevinDS
@@ -8,3 +7,5 @@
           home: /home/itesciadmin
           uid: 1001
           groups: itescia,sudo
+
+#OK le 16-10-19 (il ne faut pas creer la machine virtuelle avec un nom utilisateur identique, même après suppression de celui-ci même pb)

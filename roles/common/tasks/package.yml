@@ -10,3 +10,4 @@
      regexp: 'PermitRootLogin yes'
      line: PermitRootLogin no
      state: present
+#OK le 16-10-19

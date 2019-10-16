@@ -1,4 +1,4 @@
-#Cours administration Linux du 07-10-2019
+#Cours administration Linux du 07-10-2019 avec installation mysql
 [all]
 database
 web
@@ -8,3 +8,5 @@ web
 
 [web]
 192.168.23.180
+
+#OK le 16-10-19, insertion d'IP fixe via le DHCP VMware Workstation

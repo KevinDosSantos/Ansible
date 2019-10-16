@@ -6,3 +6,4 @@
 # Installation d'apache via Ansible Galaxy (geerlingguy)
 
 - src: geerlingguy.apache
+
